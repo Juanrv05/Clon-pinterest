@@ -1,0 +1,269 @@
+:root{
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index:3;
+}
+.container-header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+}
+.container-nav{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.logo{
+    width: 48px ;
+    height: 48px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.logo:hover{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 71px;
+}
+.inicio button{
+    background-color: white;
+    border:none;
+    color: #111111;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    height: 48px;
+    width: 71px;
+    cursor: pointer;
+}
+.inicio button:active{
+    background-color: #111111;
+    border-radius: 24px;
+    color: white;
+}
+.hoy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 91px;
+    height: 48px;
+
+}
+.hoy button{
+    background-color: white;
+    border:none;
+    color: #111111;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    width: 61.4px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoy button img{
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: none;
+}
+.hoy button:active img{
+    filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(153deg) brightness(113%) contrast(101%);
+}
+.hoy button:active{
+    background-color: #111111;
+    border-radius: 24px;
+    color: white;
+}
+.crear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 48px;
+}
+.crear button{
+    background-color: white;
+    border:none;
+    color: #111111;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    width: 91px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crear button img{
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.crear button:active{
+    background-color: #111111;
+    border-radius: 24px;
+    color: white;
+}
+.crear button:active img{
+    filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(153deg) brightness(113%) contrast(101%);
+}
+
+.container-crear-icon{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+.container-crear-icon img{
+    width: 12px;
+    height: 12px;
+}
+
+.contenedor-buscador{
+    width: 70%;
+    height: 48px;
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscador-input{
+    width: 100%;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+}
+.lupa-buscar{
+    margin: 0px 8px 0px 0px;
+}
+.input-buscar{
+    width: 100%;
+}
+.input-buscar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-family: var(--font-family)
+}
+.notificaciones{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.notificaciones img{
+    width: 24px;
+    height: 24px;
+}
+.notificaciones:hover{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+.mensajes{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.mensajes img{
+    width: 24px;
+    height: 24px;
+}
+.mensajes:hover{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+.icon-persona{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.icon-persona img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.icon-persona:hover{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+.flecha-hacia-abajo{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flecha-hacia-abajo:hover{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+.flecha-hacia-abajo img{
+    width: 12px;
+    height: 12px;
+}
+
+@media screen and (max-width:746px){
+
+    .inicio{
+        display: none;
+    }
+    .crear{
+        display: none;
+    }
+    .hoy button img{
+        display: block;
+    }
+    .hoy button:active img{
+        filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(153deg) brightness(113%) contrast(101%);
+    }
+
+    
+}
+
